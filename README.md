@@ -93,10 +93,6 @@ informação e o reconhecimento de espécies em contextos regionais específicos
 
 ### 3.1 Declaração do problema
 
-**<Project Name> Grupo:**  
-**Visão Data:** <dd/mmm/aa>  
-**UCB, 2026**
-
 **O problema de**  
 Espécies ameaçadas de extinção afetam a fauna brasileira, o equilíbrio em que a espécie está localizada e a possibilidade de nunca mais vermos certas espécies.
 
@@ -116,11 +112,6 @@ Ajudar a preservar as vidas dessas espécies e fauna local, ao criar um pequeno 
 ---
 
 ### 3.2 Declaração da visão do software
-
-**<Project Name> Grupo:**  
-**Visão Data:** <dd/mmm/aa>  
-**UCB, 2026**
-
 **Para**  
 Pessoas no geral.
 
