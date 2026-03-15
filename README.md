@@ -92,22 +92,13 @@ informação e o reconhecimento de espécies em contextos regionais específicos
 ## 3. POSICIONAMENTO
 
 ### 3.1 Declaração do problema
-
-**O problema de**  
-Espécies ameaçadas de extinção afetam a fauna brasileira, o equilíbrio em que a espécie está localizada e a possibilidade de nunca mais vermos certas espécies.
-
-**afeta**  
-Afeta o ecossistema natural do local, pois esse equilíbrio é muito frágil; se retirarmos uma parte para o local, acaba gerando uma superpopulação da espécie que precisava da outra para ser controlada.
-
-**cujo impacto é**  
-Desequilíbrio no ambiente em que essas espécies estão.
-
-**uma solução de sucesso deveria**  
-Trazendo visibilidade aos animais, pessoas vão se importar mais com eles, ganhando visibilidade para que o governo também possa olhar mais para eles e cuidar melhor.
-
+|----|----|
+|O problema de| espécies ameaçadas de extinção afetam a fauna brasileira, o equilíbrio em que a espécie está localizada e a possibilidade de nunca mais vermos certas espécies|
+|afeta| o ecossistema natural do local, pois esse equilíbrio é muito frágil; se retirarmos uma parte para o local, acaba gerando uma superpopulação da espécie que precisava da outra para ser controlada|
+|cujo impacto é|desequilíbrio no ambiente em que essas espécies estão.|
+|uma solução de sucesso deveria| trazendo visibilidade aos animais, pessoas vão se importar mais com eles, ganhando visibilidade para que o governo também possa olhar mais para eles e cuidar melhor|
 Informar localidade de algumas espécies que pessoas não sabem onde estão ou o que são.
-
-Ajudar a preservar as vidas dessas espécies e fauna local, ao criar um pequeno movimento que irá ajudar.
+Ajudar a preservar as vidas dessas espécies e fauna local, ao criar um pequeno movimento que irá ajudar.|
 
 ---
 
