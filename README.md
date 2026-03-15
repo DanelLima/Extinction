@@ -92,3 +92,69 @@ informação e o reconhecimento de espécies em contextos regionais específicos
 ## 3. POSICIONAMENTO
 
 ### 3.1 Declaração do problema
+
+**<Project Name> Grupo:**  
+**Visão Data:** <dd/mmm/aa>  
+**UCB, 2026**
+
+**O problema de**  
+Espécies ameaçadas de extinção afetam a fauna brasileira, o equilíbrio em que a espécie está localizada e a possibilidade de nunca mais vermos certas espécies.
+
+**afeta**  
+Afeta o ecossistema natural do local, pois esse equilíbrio é muito frágil; se retirarmos uma parte para o local, acaba gerando uma superpopulação da espécie que precisava da outra para ser controlada.
+
+**cujo impacto é**  
+Desequilíbrio no ambiente em que essas espécies estão.
+
+**uma solução de sucesso deveria**  
+Trazendo visibilidade aos animais, pessoas vão se importar mais com eles, ganhando visibilidade para que o governo também possa olhar mais para eles e cuidar melhor.
+
+Informar localidade de algumas espécies que pessoas não sabem onde estão ou o que são.
+
+Ajudar a preservar as vidas dessas espécies e fauna local, ao criar um pequeno movimento que irá ajudar.
+
+---
+
+### 3.2 Declaração da visão do software
+
+> [Forneça uma declaração geral e resumida do software, abrangendo seu público-alvo, o problema que ele resolve, seu nome e categoria, seu propósito, concorrentes e seu diferencial. Utilize o seguinte formato:]
+
+**<Project Name> Grupo:**  
+**Visão Data:** <dd/mmm/aa>  
+**UCB, 2026**
+
+**Para**  
+Pessoas no geral.
+
+**Que**
+
+1. Localizar espécies isoladas, que alguns não sabem que estão em extinção por falta de informação.  
+2. Falta de informação sobre as espécies, pessoas podem às vezes matá-las por estarem perto de suas casas, se for um animal, por exemplo.
+
+**O**  
+Extinction.
+
+**É um**  
+Software-Web.
+
+**Que**  
+Preserva espécies, traz conhecimento sobre as mesmas, conscientizando as pessoas.
+
+**Diferente de**  
+Plataforma Salve.
+
+**Nosso produto**  
+Plataforma Salve não tem posts como forma de divulgação, tendo informação bruta sobre as espécies, como ficha técnica completa.
+
+**Nosso funciona**  
+A base de posts, com informações sobre a espécie do post e localidade.
+
+> [O quadro acima refere-se à técnica Pitch da visão do produto. Para saber mais, leia o livro Lean Inception, de Paulo Caroli, da editora Caroli.]
+
+---
+
+## 4. DESCRIÇÃO DAS PARTES INTERESSADAS
+
+| Nome | Descrição | Responsabilidades |
+|-----|-----|-----|
+| LifeSaver | Pessoas que gostam da natureza veem uma importância nela, não a tratam como nada. | • Terá identificação.<br>• garante que o sistema terá extras informações nos posts.<br>• garante que haverá localidade nos posts.<br>• Identificação para cada espécie.<br>• informação sobre cada espécie para entendimento.<br>• localização de cada espécie postada |
