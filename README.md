@@ -117,8 +117,6 @@ Ajudar a preservar as vidas dessas espécies e fauna local, ao criar um pequeno 
 
 ### 3.2 Declaração da visão do software
 
-> [Forneça uma declaração geral e resumida do software, abrangendo seu público-alvo, o problema que ele resolve, seu nome e categoria, seu propósito, concorrentes e seu diferencial. Utilize o seguinte formato:]
-
 **<Project Name> Grupo:**  
 **Visão Data:** <dd/mmm/aa>  
 **UCB, 2026**
@@ -148,8 +146,6 @@ Plataforma Salve não tem posts como forma de divulgação, tendo informação b
 
 **Nosso funciona**  
 A base de posts, com informações sobre a espécie do post e localidade.
-
-> [O quadro acima refere-se à técnica Pitch da visão do produto. Para saber mais, leia o livro Lean Inception, de Paulo Caroli, da editora Caroli.]
 
 ---
 
