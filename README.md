@@ -14,67 +14,29 @@ Portanto, sendo um software multicliente e sem fins lucrativos, a Extinction bus
 
 ## 2. CONTEXTO DE NEGÓCIO
 
-O uso de tecnologias digitais para monitoramento ambiental e reconhecimento de
-espécies tem se expandido significativamente nos últimos anos. Avanços em áreas como visão
-computacional, aprendizado de máquina e análise de imagens têm possibilitado o
-desenvolvimento de sistemas capazes de identificar espécies animais e vegetais a partir de
-fotografias. Essas tecnologias vêm sendo aplicadas em iniciativas de pesquisa, conservação da
-biodiversidade e ciência-cidadã, permitindo ampliar o alcance das atividades de monitoramento
-ecológico.
+O uso de tecnologias digitais para monitoramento ambiental e reconhecimento de espécies tem se expandido significativamente nos últimos anos. Avanços em áreas como visão computacional, aprendizado de máquina e análise de imagens têm possibilitado o desenvolvimento de sistemas capazes de identificar espécies animais e vegetais a partir de fotografias. Essas tecnologias vêm sendo aplicadas em iniciativas de pesquisa científica, conservação da biodiversidade e ciência-cidadã, ampliando o alcance das atividades de monitoramento ecológico e permitindo maior participação da sociedade na coleta de dados ambientais.
+Entre as tecnologias utilizadas nesse domínio destaca-se o uso de frameworks de aprendizado de máquina, como o TensorFlow, que permite o treinamento de modelos de inteligência artificial voltados para tarefas de classificação e reconhecimento de padrões em imagens. A aplicação dessas ferramentas possibilita o desenvolvimento de sistemas capazes de reconhecer automaticamente determinadas espécies a partir de fotografias capturadas por dispositivos móveis, câmeras de monitoramento ou bancos de dados digitais.
 
-Entre as tecnologias utilizadas nesse domínio destaca-se o uso de frameworks de
-aprendizado de máquina, como o TensorFlow, que permite o treinamento de modelos de
-inteligência artificial voltados para tarefas de classificação e reconhecimento de padrões em
-imagens. A aplicação dessas ferramentas possibilita o desenvolvimento de sistemas capazes de
-reconhecer automaticamente determinadas espécies a partir de fotografias capturadas por
-dispositivos móveis, câmeras de monitoramento ou bancos de dados digitais.
+Apesar dos avanços tecnológicos disponíveis, a implementação de soluções baseadas em inteligência artificial para reconhecimento de espécies ainda enfrenta desafios significativos no contexto brasileiro. Um dos principais problemas está relacionado à escassez de dados de campo estruturados e de alta qualidade para treinamento de modelos de aprendizado de máquina. Para que algoritmos de visão computacional funcionem de maneira eficiente, é necessário um grande volume de imagens rotuladas e representativas das espécies em diferentes condições ambientais, ângulos, idades e variações naturais.
+No Brasil, especialmente em determinadas regiões, ainda existem lacunas importantes na disponibilidade de conjuntos de dados específicos para treinamento de modelos voltados ao reconhecimento da biodiversidade local. Muitas bases de dados disponíveis são voltadas para espécies de outras regiões do mundo ou apresentam quantidade limitada de registros para espécies brasileiras, o que dificulta a construção de modelos confiáveis para identificação automática. De acordo com relatórios de conservação ambiental, o Brasil possui uma das maiores biodiversidades do planeta, concentrando cerca de 15% a 20% das espécies conhecidas mundialmente, o que reforça a necessidade de ferramentas adequadas para monitoramento e identificação da fauna e flora.
+Outro desafio relevante está na integração prática entre modelos de inteligência artificial e aplicações de software. Embora frameworks como o TensorFlow ofereçam recursos robustos para treinamento de redes neurais e classificação de imagens, sua incorporação em sistemas de uso cotidiano — como aplicações web ou móveis — pode apresentar complexidades técnicas. Entre essas dificuldades estão a otimização do desempenho do modelo, a redução do tamanho dos arquivos gerados, a adaptação para execução em dispositivos com recursos limitados e a garantia de respostas rápidas durante o processo de reconhecimento de imagens.
+Além disso, o desenvolvimento de soluções nesse domínio frequentemente depende da utilização de bases de dados abertas e confiáveis sobre espécies ameaçadas. No Brasil, um dos principais conjuntos de informações disponíveis publicamente é a lista de espécies ameaçadas publicada pelo Ministério do Meio Ambiente. Esses dados incluem informações sobre o status de conservação das espécies, classificação de risco de extinção e distribuição geográfica aproximada. Entretanto, essas bases de dados frequentemente apresentam limitações relacionadas à atualização, padronização ou integração direta com ferramentas de aprendizado de máquina, exigindo processos adicionais de tratamento, organização e adaptação dos dados.
+Nesse contexto, diferentes grupos de usuários são impactados por essas limitações. Entre os principais usuários e interessados nesse domínio estão:
 
-Apesar dos avanços tecnológicos disponíveis, a implementação de soluções baseadas em
-inteligência artificial para reconhecimento de espécies ainda enfrenta desafios significativos no
-contexto brasileiro. Um dos principais problemas está relacionado à escassez de dados de campo
-estruturados e de alta qualidade para treinamento de modelos de aprendizado de máquina. Para
-que algoritmos de visão computacional funcionem de maneira eficiente, é necessário um grande
-volume de imagens rotuladas e representativas das espécies em diferentes condições ambientais,
-ângulos, idades e variações naturais.
+•	pesquisadores e biólogos, que necessitam de dados confiáveis para estudos científicos e monitoramento de espécies;
 
-No Brasil, especialmente em determinadas regiões como o Distrito Federal, ainda
-existem lacunas importantes na disponibilidade de conjuntos de dados específicos para
-treinamento de modelos voltados ao reconhecimento da biodiversidade local. Muitas bases de
-dados disponíveis são voltadas para espécies de outras regiões do mundo ou apresentam
-quantidade limitada de registros para espécies brasileiras, o que dificulta a construção de modelos
-confiáveis para identificação automática.
+•	órgãos ambientais e instituições governamentais, responsáveis pela elaboração de políticas públicas e programas de conservação;
 
-Outro desafio relevante está na integração prática entre modelos de inteligência artificial
-e aplicações de software. Embora frameworks como o TensorFlow ofereçam recursos robustos
-para treinamento de redes neurais e classificação de imagens, sua incorporação em sistemas de
-uso cotidiano — como aplicações web ou móveis — pode apresentar complexidades técnicas.
-Entre essas dificuldades estão a otimização do desempenho do modelo, a redução do tamanho dos
-arquivos gerados, a adaptação para execução em dispositivos com recursos limitados e a garantia
-de respostas rápidas durante o processo de reconhecimento de imagens.
+•	organizações não governamentais voltadas à preservação ambiental, que utilizam dados para campanhas e projetos de conservação;
 
-Além disso, o desenvolvimento de soluções nesse domínio frequentemente depende da
-utilização de bases de dados abertas e confiáveis sobre espécies ameaçadas. No Brasil, um dos
-principais conjuntos de informações disponíveis publicamente é a lista de espécies ameaçadas
-publicada pelo Ministério do Meio Ambiente. Esses dados incluem informações sobre o status de
-conservação das espécies, classificação de risco de extinção e distribuição geográfica
-aproximada.
+•	educadores e estudantes, que buscam informações sobre biodiversidade para fins educacionais;
 
-O uso de dados abertos provenientes de órgãos governamentais representa uma
-importante oportunidade para o desenvolvimento de aplicações voltadas à conservação ambiental,
-pois permite que pesquisadores, desenvolvedores e instituições utilizem informações oficiais
-como base para novos sistemas e análises. Entretanto, essas bases de dados frequentemente
-apresentam limitações relacionadas à atualização, padronização ou integração direta com
-ferramentas de aprendizado de máquina, exigindo processos adicionais de tratamento,
-organização e adaptação dos dados.
+•	cidadãos interessados em natureza e ciência-cidadã, que participam da coleta e registro de dados ambientais.
+O mercado e o domínio de aplicação relacionados ao monitoramento da biodiversidade e reconhecimento de espécies têm crescido globalmente, impulsionados pelo aumento das preocupações ambientais, pela ampliação de projetos de ciência-cidadã e pela popularização de dispositivos móveis com câmeras de alta qualidade. Entretanto, ainda existem lacunas importantes relacionadas à disponibilidade de dados regionais, à padronização das informações e à acessibilidade das ferramentas tecnológicas para usuários não especializados.
+No cenário internacional, já existem algumas soluções digitais voltadas à identificação de espécies e monitoramento da biodiversidade. Entre elas destacam-se plataformas como o iNaturalist e o Seek by iNaturalist, que utilizam inteligência artificial e colaboração da comunidade para identificar espécies a partir de imagens enviadas pelos usuários. Essas plataformas apresentam pontos fortes, como grande volume de dados colaborativos, comunidades ativas de especialistas e integração com bases científicas.
+Entretanto, essas soluções também apresentam algumas limitações no contexto brasileiro. Entre elas estão a menor cobertura de determinadas espécies regionais, dificuldades relacionadas à identificação precisa em ambientes específicos e a limitação de informações detalhadas sobre espécies locais ameaçadas. Além disso, muitas dessas plataformas dependem fortemente da contribuição de comunidades científicas e voluntários para validação das observações, o que pode gerar atrasos ou inconsistências na classificação das espécies.
+Dessa forma, observa-se que, embora existam tecnologias e plataformas voltadas ao reconhecimento de espécies e ao monitoramento da biodiversidade, ainda persistem desafios relacionados à disponibilidade de dados locais, à integração entre inteligência artificial e aplicações digitais e ao aproveitamento eficiente de bases de dados abertas sobre biodiversidade. Essas limitações evidenciam lacunas importantes no domínio de aplicação e indicam a necessidade de aprimoramento das ferramentas existentes para apoiar iniciativas de conservação ambiental, pesquisa científica e conscientização da sociedade sobre a preservação da biodiversidade.
 
-Nesse cenário, observa-se que, embora existam tecnologias avançadas capazes de apoiar
-o reconhecimento automatizado de espécies e o monitoramento ambiental, ainda persistem
-desafios relacionados à disponibilidade de dados locais, à integração entre inteligência artificial e
-aplicações digitais e ao aproveitamento eficiente de bases de dados abertas sobre biodiversidade.
-
-Essas limitações evidenciam lacunas importantes no domínio de aplicação e indicam
-oportunidades para o desenvolvimento de soluções tecnológicas que facilitem o acesso à
-informação e o reconhecimento de espécies em contextos regionais específicos.
 
 ## 3. POSICIONAMENTO
 
