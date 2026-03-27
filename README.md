@@ -79,160 +79,40 @@ Dessa forma, observa-se que, embora existam tecnologias e plataformas voltadas a
 
 **5.1 REQUISITOS FUNCIONAIS**
 
-**[RF001] Reconhecimento de Espécie via Machine Learning**
-O sistema deve permitir que o usuário tire uma foto ou suba uma imagem para que o Extinction
-identifique a espécie de fauna ou flora automaticamente.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF002] Mapeamento de Avistamento (GPS)**
-O sistema deve capturar automaticamente as coordenadas geográficas (latitude e longitude)
-no momento em que um usuário registrar um novo avistamento.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF003] Validação de Status de Extinção**
-Após a identificação, o sistema deve consultar uma base de dados (API) para atribuir o selo
-de conservação correto (Ex: "Em Perigo", "Vulnerável", "Extinta na Natureza").
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF004] Sincronização de Dados Offline**
-O sistema deve permitir que o usuário registre avistamentos sem conexão com a internet e
-realize o upload automático assim que detectar um sinal ativo.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF005] Feed de Interação Comunitária**
-O sistema deve exibir uma linha do tempo com as descobertas de outros usuários, permitindo
-interações como curtidas e comentários.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RF006] Enciclopédia Pessoal (Catálogo)**
-O sistema deve manter um histórico organizado (álbum) de todas as espécies que o usuário já
-catalogou, funcionando como um "log de conquistas".
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RF007] Ranking de Usuários (Gamificação)**
-O sistema deve listar os usuários com maior número de avistamentos validados para
-incentivar a participação na coleta de dados.
-Prioridade: ◻ Essencial ◻ Importante ⌧ Desejável
-
-**[RF008] Filtro de Mapa Interativo**
-O sistema deve permitir que o usuário filtre o mapa por tipo de espécie, data ou nível de risco
-de extinção.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RF009] Manter Cadastro de Usuário**
-O sistema deve permitir criar, ler, atualizar e desativar contas de usuário.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF010] Gerenciar Dados do Perfil**
-O sistema deve permitir que o usuário edite suas informações públicas (nome, foto de perfil,
-bio) e visualize suas estatísticas (total de espécies catalogadas).
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF011] Criar Postagem de Avistamento**
-O sistema deve permitir que o usuário publique uma foto acompanhada da espécie
-identificada e da localidade capturada.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF012] Excluir/Editar Postagem**
-O usuário autor da postagem deve poder remover ou corrigir informações de sua publicação.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF013] Listar Feed de Postagens**
-O sistema deve recuperar e exibir as postagens de forma cronológica ou por relevância para
-os usuários.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RF014] Consultar Informações da Espécie**
-O sistema deve permitir a busca e leitura de dados detalhados de uma espécie (nome
-científico, habitat) a partir do banco de dados.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF015] Atribuir Selo de Especialista**
-O sistema deve vincular ao perfil do usuário, um selo de especialista para aqueles que
-comprovem conhecimento na área (biólogos, veterinários)
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RF016] Registrar Coordenadas de Avistamento**
-O sistema deve persistir a Latitude e Longitude de cada nova postagem para alimentar o
-mapa interativo.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF017] Filtrar Avistamentos por Localidade**
-O sistema deve permitir a leitura de pontos geográficos dentro de um raio específico ou
-região selecionada no mapa.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RF018] Executar Inferência de Imagem**
-O sistema deve enviar a imagem capturada para a classe Tensorflow e receber como retorno a
-predição da espécie com sua respectiva porcentagem de confiança.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF019] Vincular Espécie à Postagem**
-O sistema deve permitir que uma ou mais espécies identificadas pelo TensorFlow sejam
-associadas a uma postagem específica no momento da publicação ou edição.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF020] Desvincular Espécie de Postagem**
-O sistema deve permitir a remoção do vínculo entre uma espécie e uma postagem, caso a
-identificação seja invalidada por um especialista.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF021] Consultar Espécies por Postagem**
-O sistema deve recuperar todas as espécies associadas a uma idPostagem específica para
-exibição no feed ou detalhes do avistamento.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RF022] Listar Postagens por Espécie**
-O sistema deve ser capaz de filtrar e exibir todas as postagens que contenham uma idEspecie
-específica, permitindo visualizar a distribuição geográfica daquela espécie no mapa.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
+| ID | Nome | Descrição | Prioridade |
+| :--- | :--- | :--- | :--- |
+| **RF001** | Reconhecimento de Espécie via Machine Learning | O sistema deve permitir que o usuário tire uma foto ou suba uma imagem para que o Extinction identifique a espécie de fauna ou flora automaticamente. | Essencial |
+| **RF002** | Mapeamento de Avistamento (GPS) | O sistema deve capturar automaticamente as coordenadas geográficas (latitude e longitude) no momento em que um usuário registrar um novo avistamento. | Essencial |
+| **RF003** | Validação de Status de Extinção | Após a identificação, o sistema deve consultar uma base de dados (API) para atribuir o selo de conservação correto (Ex: "Em Perigo", "Vulnerável", "Extinta na Natureza"). | Essencial |
+| **RF004** | Sincronização de Dados Offline | O sistema deve permitir que o usuário registre avistamentos sem conexão com a internet e realize o upload automático assim que detectar um sinal ativo. | Essencial |
+| **RF005** | Feed de Interação Comunitária | O sistema deve exibir uma linha do tempo com as descobertas de outros usuários, permitindo interações como curtidas e comentários. | Importante |
+| **RF006** | Enciclopédia Pessoal (Catálogo) | O sistema deve manter um histórico organizado (álbum) de todas as espécies que o usuário já catalogou, funcionando como um "log de conquistas". | Importante |
+| **RF007** | Ranking de Usuários (Gamificação) | O sistema deve listar os usuários com maior número de avistamentos validados para incentivar a participação na coleta de dados. | Desejável |
+| **RF008** | Filtro de Mapa Interativo | O sistema deve permitir que o usuário filtre o mapa por tipo de espécie, data ou nível de risco de extinção. | Importante |
+| **RF009** | Manter Cadastro de Usuário | O sistema deve permitir criar, ler, atualizar e desativar contas de usuário. | Essencial |
+| **RF010** | Gerenciar Dados do Perfil | O sistema deve permitir que o usuário edite suas informações públicas (nome, foto de perfil, bio) e visualize suas estatísticas (total de espécies catalogadas). | Essencial |
+| **RF011** | Criar Postagem de Avistamento | O sistema deve permitir que o usuário publique uma foto acompanhada da espécie identificada e da localidade capturada. | Essencial |
+| **RF012** | Excluir/Editar Postagem | O usuário autor da postagem deve poder remover ou corrigir informações de sua publicação. | Essencial |
+| **RF013** | Listar Feed de Postagens | O sistema deve recuperar e exibir as postagens de forma cronológica ou por relevância para os usuários. | Importante |
+| **RF014** | Consultar Informações da Espécie | O sistema deve permitir a busca e leitura de dados detalhados de uma espécie (nome científico, habitat) a partir do banco de dados. | Essencial |
+| **RF015** | Atribuir Selo de Especialista | O sistema deve vincular ao perfil do usuário, um selo de especialista para aqueles que comprovem conhecimento na área (biólogos, veterinários). | Importante |
+| **RF016** | Registrar Coordenadas de Avistamento | O sistema deve persistir a Latitude e Longitude de cada nova postagem para alimentar o mapa interativo. | Essencial |
+| **RF017** | Filtrar Avistamentos por Localidade | O sistema deve permitir a leitura de pontos geográficos dentro de um raio específico ou região selecionada no mapa. | Importante |
+| **RF018** | Executar Inferência de Imagem | O sistema deve enviar a imagem capturada para a classe Tensorflow e receber como retorno a predição da espécie com sua respectiva porcentagem de confiança. | Essencial |
+| **RF019** | Vincular Espécie à Postagem | O sistema deve permitir que uma ou mais espécies identificadas pelo TensorFlow sejam associadas a uma postagem específica no momento da publicação ou edição. | Essencial |
+| **RF020** | Desvincular Espécie de Postagem | O sistema deve permitir a remoção do vínculo entre uma espécie e uma postagem, caso a identificação seja invalidada por um especialista. | Essencial |
+| **RF021** | Consultar Espécies por Postagem | O sistema deve recuperar todas as espécies associadas a uma idPostagem específica para exibição no feed ou detalhes do avistamento. | Essencial |
+| **RF022** | Listar Postagens por Espécie | O sistema deve ser capaz de filtrar e exibir todas as postagens que contenham uma idEspecie específica, permitindo visualizar a distribuição geográfica daquela espécie no mapa. | Importante |
 
 **5.2 REQUISITOS NÃO FUNCIONAIS**
-**[RNF001] Segurança**
-O sistema deve ser projetado para ser seguro, com recursos para proteger a
-privacidade e confidencialidade dos usuários, como criptografia de senha, autenticação em
-dois fatores e medidas de segurança para evitar ataques de hackers.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RNF002] Escalabilidade**
-O sistema deve ser projetado para lidar com um grande número de usuários. 
-Ele deve ser capaz de escalar facilmente conforme a demanda aumentar e
-garantir que o desempenho não seja afetado negativamente.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RNF003] Usabilidade**
-O sistema deve ser fácil de usar e navegar para garantir a melhor experiência do
-usuário. Deve ter uma interface intuitiva e amigável, além de instruções claras para os
-usuários.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RNF004] Tempo de Resposta (Performance)**
-O processamento da imagem pelo modelo de Machine Learning para identificação da espécie
-não deve ultrapassar 20 segundos.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RNF005] Disponibilidade Offline (Confiabilidade)**
-O banco de dados local deve ser capaz de armazenar pelo menos 100 registros completos
-(imagem + metadados) enquanto o dispositivo estiver sem conexão.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RNF006] Eficiência Energética**
-O aplicativo deve ser otimizado para que o uso contínuo do GPS e câmera não consuma mais
-de 30% de bateria por hora de uso ativo.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RNF007] Integridade de Dados Geográficos**
-O sistema deve implementar filtros de validação para impedir que avistamentos de espécies
-terrestres sejam registrados em coordenadas localizadas em oceanos ou desertos
-incompatíveis.
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
-
-**[RNF008] Modularidade da API de Espécies**
-A arquitetura do sistema deve permitir a substituição ou atualização da base de dados
-científica (IUCN/IBAMA) sem a necessidade de alteração no núcleo do código-fonte.
-Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
-
-**[RNF009] Portabilidade**
-O sistema deve ser desenvolvido de forma a garantir uma experiência fluida tanto em
-sistemas Android quanto iOS
-Prioridade: ◻ Essencial ⌧ Importante ◻ Desejável
+| ID | Nome | Descrição | Prioridade |
+| :--- | :--- | :--- | :--- |
+| **RNF001** | Segurança | O sistema deve ser projetado para ser seguro, com recursos para proteger a privacidade e confidencialidade dos usuários, como criptografia de senha, autenticação em dois fatores e medidas de segurança para evitar ataques de hackers. | Essencial |
+| **RNF002** | Escalabilidade | O sistema deve ser projetado para lidar com um grande número de usuários. Ele deve ser capaz de escalar facilmente conforme a demanda aumentar e garantir que o desempenho não seja afetado negativamente. | Essencial |
+| **RNF003** | Usabilidade | O sistema deve ser fácil de usar e navegar para garantir a melhor experiência do usuário. Deve ter uma interface intuitiva e amigável, além de instruções claras para os usuários. | Essencial |
+| **RNF004** | Tempo de Resposta (Performance) | O processamento da imagem pelo modelo de Machine Learning para identificação da espécie não deve ultrapassar 20 segundos. | Importante |
+| **RNF005** | Disponibilidade Offline (Confiabilidade) | O banco de dados local deve ser capaz de armazenar pelo menos 100 registros completos (imagem + metadados) enquanto o dispositivo estiver sem conexão. | Essencial |
+| **RNF006** | Eficiência Energética | O aplicativo deve ser otimizado para que o uso contínuo do GPS e câmera não consuma mais de 30% de bateria por hora de uso ativo. | Importante |
+| **RNF007** | Integridade de Dados Geográficos | O sistema deve implementar filtros de validação para impedir que avistamentos de espécies terrestres sejam registrados em coordenadas localizadas em oceanos ou desertos incompatíveis. | Importante |
+| **RNF008** | Modularidade da API de Espécies | A arquitetura do sistema deve permitir a substituição ou atualização da base de dados científica (IUCN/IBAMA) sem a necessidade de alteração no núcleo do código-fonte. | Essencial |
+| **RNF009** | Portabilidade | O sistema deve ser desenvolvido de forma a garantir uma experiência fluida tanto em sistemas Android quanto iOS. | Importante |
