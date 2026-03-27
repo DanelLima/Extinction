@@ -91,7 +91,7 @@ A base de posts, com informações sobre a espécie do post e localidade.
 **5.1 REQUISITOS FUNCIONAIS**
 
 **[RF001] Reconhecimento de Espécie via Machine Learning**
-O sistema deve permitir que o usuário tire uma foto ou suba uma imagem para que a IA
+O sistema deve permitir que o usuário tire uma foto ou suba uma imagem para que o Extinction
 identifique a espécie de fauna ou flora automaticamente.
 Prioridade: ⌧ Essencial ◻ Importante ◻ Desejável
 
