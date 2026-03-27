@@ -51,26 +51,15 @@ Dessa forma, observa-se que, embora existam tecnologias e plataformas voltadas a
 ---
 
 ### 3.2 Declaração da visão do software
-**Para**  
-Pessoas no geral.
-
-**Que**
-Carecem de informações sobre espécies locais e podem acabar por prejudicá-las por desconhecimento ou medo
-
-**O**  
-Extinction.
-
-**É um**  
-Software-web de conscientização ambiental 
-
-**Que**  
-Preserva a biodiversidade ao transformar dados técnicos em publicações acessíveis e educativas, conectando os usuários à fauna e flora da sua região.
-
-**Diferente de**  
-Plataforma iNaturalist, que foca em pesquisas densas e observações, 
-
-**Nosso produto**  
-Aposta num formato dinâmico de posts informativos e geolocalizados, facilitando a identificação e a proteção das espécies de forma prática e social. 
+|||
+| :--- | :--- |
+| **Para** | Pessoas no geral. |
+| **Que** | Carecem de informações sobre espécies locais e podem acabar por prejudicá-las por desconhecimento ou medo. |
+| **O** | Extinction. |
+| **É um** | Software-web de conscientização ambiental. |
+| **Que** | Preserva a biodiversidade ao transformar dados técnicos em publicações acessíveis e educativas, conectando os usuários à fauna e flora da sua região. |
+| **Diferente de** | Plataforma iNaturalist, que foca em pesquisas densas e observações. |
+| **Nosso produto** | Aposta num formato dinâmico de posts informativos e geolocalizados, facilitando a identificação e a proteção das espécies de forma prática e social. |
 
 
 
@@ -79,8 +68,11 @@ Aposta num formato dinâmico de posts informativos e geolocalizados, facilitando
 ## 4. DESCRIÇÃO DAS PARTES INTERESSADAS
 
 | Nome | Descrição | Responsabilidades |
-|-----|-----|-----|
-| LifeSaver | Pessoas que gostam da natureza veem uma importância nela, não a tratam como nada. | • Terá identificação.<br>• garante que o sistema terá extras informações nos posts.<br>• garante que haverá localidade nos posts.<br>• Identificação para cada espécie.<br>• informação sobre cada espécie para entendimento.<br>• localização de cada espécie postada |
+| :--- | :--- | :--- |
+| **Usuários Finais (cidadão comum)** | Entusiastas da natureza, trilheiros e fotógrafos amadores que utilizam o app em campo. | • Alimentar a base de dados com avistamentos reais e fotografias de qualidade.<br>• Interagir com a comunidade para fomentar o engajamento científico.<br>• Garantir a veracidade das informações postadas (autopoliciamento da comunidade). |
+| **Pesquisadores e Biólogos (Especialistas)** | Profissionais da área ambiental que utilizam os dados mapeados para estudos populacionais e de conservação. | • Validar a acurácia das identificações feitas pelo Machine Learning.<br>• Utilizar os dados consolidados para gerar relatórios de preservação.<br>• Garantir que os selos de extinção estejam alinhados com as normas científicas vigentes. |
+| **Equipe de Desenvolvimento** | Responsáveis pela construção técnica e gestão do produto. | • Garantir a qualidade técnica e a manutenibilidade do código.<br>• Monitorar o progresso das sprints e entregas acadêmicas.<br>• Implementar e otimizar os modelos de Machine Learning para reconhecimento de espécies.<br>• Assegurar a disponibilidade do sistema e a integridade dos dados coletados. |
+| **Órgãos Reguladores e ONGs (IBAMA, IUCN, ICMBio)** | Instituições que fornecem as bases de dados de espécies em risco e se beneficiam do mapeamento. | • Fornecer (via APIs ou documentos) as listas atualizadas de fauna e flora em extinção.<br>• Garantir que o sistema atue em conformidade com as leis de proteção à biodiversidade.<br>• Atuar como possíveis parceiros para a sustentabilidade de longo prazo do projeto. |
 
 
 **5 REQUISITOS**
