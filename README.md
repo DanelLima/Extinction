@@ -43,10 +43,10 @@ Dessa forma, observa-se que, embora existam tecnologias e plataformas voltadas a
 ### 3.1 Declaração do problema
 |||
 |-----|-----|
-|O problema de| espécies ameaçadas de extinção afetam a fauna brasileira, o equilíbrio em que a espécie está localizada e a possibilidade de nunca mais vermos certas espécies|
-|afeta| o ecossistema natural do local, pois esse equilíbrio é muito frágil; se retirarmos uma parte para o local, acaba gerando uma superpopulação da espécie que precisava da outra para ser controlada|
-|cujo impacto é|desequilíbrio no ambiente em que essas espécies estão.|
-|uma solução de sucesso deveria| trazendo visibilidade aos animais, pessoas vão se importar mais com eles, ganhando visibilidade para que o governo também possa olhar mais para eles e cuidar melhor.<br>Informar localidade de algumas espécies que pessoas não sabem onde estão ou o que são.<br>Ajudar a preservar as vidas dessas espécies e fauna local, ao criar um pequeno movimento que irá ajudar.|
+|O problema de| A acelerada extinção de espécies da fauna brasileira e a escassez de dados georreferenciados atualizados sobre sua localização e status de conservação|
+|afeta| O equilíbrio dos ecossistemas locais, uma vez que a retirada de espécies-chave rompe cadeias tróficas (causando superpopulações ou colapsos biológicos) e elimina recursos naturais antes mesmo de serem compreendidos pela ciência. |
+|cujo impacto é|O desequilíbrio ambiental irreversível e a perda de potencial biotecnológico e médico — como o fechamento de janelas de pesquisa em zoofarmacognosia e a descoberta de curas para doenças que dependem da preservação da biodiversidade genética|
+|uma solução de sucesso deveria| Prover uma plataforma de ciência cidadã que gere visibilidade e dados em tempo real, permitindo que a sociedade e o poder público identifiquem, mapeiem e monitorem espécies em risco. A solução deve transformar a conscientização passiva em um movimento ativo de preservação através da tecnologia de reconhecimento e catalogação.|
 
 ---
 
@@ -55,27 +55,24 @@ Dessa forma, observa-se que, embora existam tecnologias e plataformas voltadas a
 Pessoas no geral.
 
 **Que**
-
-1. Localizar espécies isoladas, que alguns não sabem que estão em extinção por falta de informação.  
-2. Falta de informação sobre as espécies, pessoas podem às vezes matá-las por estarem perto de suas casas, se for um animal, por exemplo.
+Carecem de informações sobre espécies locais e podem acabar por prejudicá-las por desconhecimento ou medo
 
 **O**  
 Extinction.
 
 **É um**  
-Software-Web.
+Software-web de conscientização ambiental 
 
 **Que**  
-Preserva espécies, traz conhecimento sobre as mesmas, conscientizando as pessoas.
+Preserva a biodiversidade ao transformar dados técnicos em publicações acessíveis e educativas, conectando os usuários à fauna e flora da sua região.
 
 **Diferente de**  
-Plataforma Salve.
+Plataforma iNaturalist, que foca em pesquisas densas e observações, 
 
 **Nosso produto**  
-Plataforma Salve não tem posts como forma de divulgação, tendo informação bruta sobre as espécies, como ficha técnica completa.
+Aposta num formato dinâmico de posts informativos e geolocalizados, facilitando a identificação e a proteção das espécies de forma prática e social. 
 
-**Nosso funciona**  
-A base de posts, com informações sobre a espécie do post e localidade.
+
 
 ---
 
