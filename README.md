@@ -1,118 +1,132 @@
-# EXTINCTION
+<p align="center">
+  <img src="docs/images/logo.png" width="96" alt="Logo do Extinction">
+</p>
 
-## 1. INTRODUÇÃO
+<h1 align="center">Extinction</h1>
 
-O presente documento tem por finalidade fornecer as informações de como o projeto será desenvolvido, seus objetivos e implicações para aplicá-lo. O projeto Extinction é composto por André Ribamar Martins Da Silva, Alysson Kauã Rocha De Carvalho, Guilherme Alves Rocha, Cayky Emílio Vieira Neves, Daniel Souza De Lima, Flávio Daniel Rocha Santos. 
+<p align="center">
+  App de ciência cidadã que transforma fotos de campo em dados georreferenciados sobre a biodiversidade brasileira.
+</p>
 
-No contexto do desenvolvimento urbano brasileiro, a Mata Atlântica passou por perdas significativas e, em muitos casos, irrecuperáveis em sua fauna e flora. Estima-se que cerca de 71,6% de sua vegetação nativa tenha sido desmatada. Nesse bioma encontram-se espécies emblemáticas, como o Mico-leão-dourado e as Araucárias, que dependem diretamente da preservação desses ambientes para sua sobrevivência.  
+<p align="center">
+  Projeto acadêmico · Engenharia de Software · Universidade Católica de Brasília · Grupo 11 · 2026
+</p>
 
-Ao considerar também o Cerrado brasileiro, observa-se que espécies como o Lobo-guará se encontram ameaçadas de extinção. Caso as ameaças atuais, como a expansão urbana, a perda de habitat e a ação humana, continuem, existe a possibilidade de que algumas dessas espécies desapareçam nas próximas décadas. Assim, torna-se necessário ampliar a visibilidade sobre as espécies ameaçadas. Com a disseminação de informações e maior conscientização da população, é possível aumentar o engajamento social na proteção da biodiversidade.  
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/app/login.jpg" width="240" alt="Tela de login"><br>Login</td>
+    <td align="center"><img src="docs/images/app/feed.jpg" width="240" alt="Feed de avistamentos"><br>Feed</td>
+    <td align="center"><img src="docs/images/app/mapa.jpg" width="240" alt="Mapa de avistamentos"><br>Mapa</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/app/novo-avistamento.jpg" width="240" alt="Novo avistamento"><br>Novo avistamento</td>
+    <td align="center"><img src="docs/images/app/especies.jpg" width="240" alt="Enciclopédia de espécies"><br>Espécies</td>
+    <td align="center"><img src="docs/images/app/perfil.jpg" width="240" alt="Perfil do usuário"><br>Perfil</td>
+  </tr>
+</table>
 
-Nesse contexto, surge a Extinction, uma nova iniciativa desenvolvida com o propósito de auxiliar na proteção de espécies ameaçadas. É importante destacar que nem todos os fatores relacionados ao desaparecimento dessas espécies podem ser abordados, como processos naturais de seleção. Ainda assim, a plataforma pretende atuar como um importante meio de divulgação e conscientização ambiental.  
+<sub>Capturas do app em execução. O protótipo está em <a href="docs/design.md">Design</a>.</sub>
 
-Portanto, sendo um software multicliente e sem fins lucrativos, a Extinction busca contribuir para a educação ambiental e para a promoção de ações que incentivem a preservação das espécies ameaçadas e de seus habitats naturais. 
+## O problema
 
-## 2. CONTEXTO DE NEGÓCIO
+O Brasil concentra uma parte enorme da biodiversidade conhecida, mas faltam dados atualizados sobre onde as espécies ameaçadas ainda estão. Plataformas internacionais de identificação têm cobertura menor de espécies locais e pouca informação sobre o status de conservação delas.
 
-O uso de tecnologias digitais para monitoramento ambiental e reconhecimento de espécies tem se expandido significativamente nos últimos anos. Avanços em áreas como visão computacional, aprendizado de máquina e análise de imagens têm possibilitado o desenvolvimento de sistemas capazes de identificar espécies animais e vegetais a partir de fotografias. Essas tecnologias vêm sendo aplicadas em iniciativas de pesquisa científica, conservação da biodiversidade e ciência-cidadã, ampliando o alcance das atividades de monitoramento ecológico e permitindo maior participação da sociedade na coleta de dados ambientais.
-Entre as tecnologias utilizadas nesse domínio destaca-se o uso de frameworks de aprendizado de máquina, como o TensorFlow, que permite o treinamento de modelos de inteligência artificial voltados para tarefas de classificação e reconhecimento de padrões em imagens. A aplicação dessas ferramentas possibilita o desenvolvimento de sistemas capazes de reconhecer automaticamente determinadas espécies a partir de fotografias capturadas por dispositivos móveis, câmeras de monitoramento ou bancos de dados digitais.
+O Extinction aposta em um formato social e simples: quem está em uma trilha fotografa um animal ou uma planta, confirma a espécie sugerida pela IA e publica o registro. Cada publicação vira um ponto no mapa e um dado que especialistas podem validar.
 
-Apesar dos avanços tecnológicos disponíveis, a implementação de soluções baseadas em inteligência artificial para reconhecimento de espécies ainda enfrenta desafios significativos no contexto brasileiro. Um dos principais problemas está relacionado à escassez de dados de campo estruturados e de alta qualidade para treinamento de modelos de aprendizado de máquina. Para que algoritmos de visão computacional funcionem de maneira eficiente, é necessário um grande volume de imagens rotuladas e representativas das espécies em diferentes condições ambientais, ângulos, idades e variações naturais.
-No Brasil, especialmente em determinadas regiões, ainda existem lacunas importantes na disponibilidade de conjuntos de dados específicos para treinamento de modelos voltados ao reconhecimento da biodiversidade local. Muitas bases de dados disponíveis são voltadas para espécies de outras regiões do mundo ou apresentam quantidade limitada de registros para espécies brasileiras, o que dificulta a construção de modelos confiáveis para identificação automática. De acordo com relatórios de conservação ambiental, o Brasil possui uma das maiores biodiversidades do planeta, concentrando cerca de 15% a 20% das espécies conhecidas mundialmente, o que reforça a necessidade de ferramentas adequadas para monitoramento e identificação da fauna e flora.
-Outro desafio relevante está na integração prática entre modelos de inteligência artificial e aplicações de software. Embora frameworks como o TensorFlow ofereçam recursos robustos para treinamento de redes neurais e classificação de imagens, sua incorporação em sistemas de uso cotidiano — como aplicações web ou móveis — pode apresentar complexidades técnicas. Entre essas dificuldades estão a otimização do desempenho do modelo, a redução do tamanho dos arquivos gerados, a adaptação para execução em dispositivos com recursos limitados e a garantia de respostas rápidas durante o processo de reconhecimento de imagens.
-Além disso, o desenvolvimento de soluções nesse domínio frequentemente depende da utilização de bases de dados abertas e confiáveis sobre espécies ameaçadas. No Brasil, um dos principais conjuntos de informações disponíveis publicamente é a lista de espécies ameaçadas publicada pelo Ministério do Meio Ambiente. Esses dados incluem informações sobre o status de conservação das espécies, classificação de risco de extinção e distribuição geográfica aproximada. Entretanto, essas bases de dados frequentemente apresentam limitações relacionadas à atualização, padronização ou integração direta com ferramentas de aprendizado de máquina, exigindo processos adicionais de tratamento, organização e adaptação dos dados.
-Nesse contexto, diferentes grupos de usuários são impactados por essas limitações. Entre os principais usuários e interessados nesse domínio estão:
+## Como funciona
 
-•	pesquisadores e biólogos, que necessitam de dados confiáveis para estudos científicos e monitoramento de espécies;
+1. **Foto:** o usuário envia de 1 a 6 imagens JPG ou PNG.
+2. **Identificação:** o BioCLIP 2 sugere até 5 espécies com confiança mínima de 20%.
+3. **Confirmação:** o usuário confirma a espécie correta.
+4. **Localização:** o app registra latitude, longitude, data e hora, aceitando apenas coordenadas do território brasileiro.
+5. **Selo de conservação:** o sistema aplica o status IUCN/MMA da espécie.
+6. **Publicação:** o avistamento entra no feed e no mapa.
 
-•	órgãos ambientais e instituições governamentais, responsáveis pela elaboração de políticas públicas e programas de conservação;
+Sem sinal, o registro fica em uma fila no aparelho e percorre o mesmo caminho quando a conexão volta.
 
-•	organizações não governamentais voltadas à preservação ambiental, que utilizam dados para campanhas e projetos de conservação;
+## Principais funcionalidades
 
-•	educadores e estudantes, que buscam informações sobre biodiversidade para fins educacionais;
+- **Conta:** cadastro, login com JWT, recuperação de senha por código e modo de visitante.
+- **Avistamentos:** várias fotos por postagem, curtidas, comentários, edição e exclusão.
+- **Modo offline:** fila de até 100 registros, com envio automático e sem duplicatas.
+- **Mapa:** agrupamento de marcadores, busca e filtros por status, categoria, UF e município.
+- **Enciclopédia:** mural de espécies, ficha técnica, coleção pessoal e selos de raridade.
+- **Curadoria científica:** a comunidade contesta identificações, e especialistas validam ou desvinculam espécies.
+- **Comunidade:** seguidores, ranking com avistamentos validados, chat direto e em grupo e notificações.
+- **Administração:** painel web para selos de especialista e dados das espécies.
 
-•	cidadãos interessados em natureza e ciência-cidadã, que participam da coleta e registro de dados ambientais.
-O mercado e o domínio de aplicação relacionados ao monitoramento da biodiversidade e reconhecimento de espécies têm crescido globalmente, impulsionados pelo aumento das preocupações ambientais, pela ampliação de projetos de ciência-cidadã e pela popularização de dispositivos móveis com câmeras de alta qualidade. Entretanto, ainda existem lacunas importantes relacionadas à disponibilidade de dados regionais, à padronização das informações e à acessibilidade das ferramentas tecnológicas para usuários não especializados.
-No cenário internacional, já existem algumas soluções digitais voltadas à identificação de espécies e monitoramento da biodiversidade. Entre elas destacam-se plataformas como o iNaturalist e o Seek by iNaturalist, que utilizam inteligência artificial e colaboração da comunidade para identificar espécies a partir de imagens enviadas pelos usuários. Essas plataformas apresentam pontos fortes, como grande volume de dados colaborativos, comunidades ativas de especialistas e integração com bases científicas.
-Entretanto, essas soluções também apresentam algumas limitações no contexto brasileiro. Entre elas estão a menor cobertura de determinadas espécies regionais, dificuldades relacionadas à identificação precisa em ambientes específicos e a limitação de informações detalhadas sobre espécies locais ameaçadas. Além disso, muitas dessas plataformas dependem fortemente da contribuição de comunidades científicas e voluntários para validação das observações, o que pode gerar atrasos ou inconsistências na classificação das espécies.
-Dessa forma, observa-se que, embora existam tecnologias e plataformas voltadas ao reconhecimento de espécies e ao monitoramento da biodiversidade, ainda persistem desafios relacionados à disponibilidade de dados locais, à integração entre inteligência artificial e aplicações digitais e ao aproveitamento eficiente de bases de dados abertas sobre biodiversidade. Essas limitações evidenciam lacunas importantes no domínio de aplicação e indicam a necessidade de aprimoramento das ferramentas existentes para apoiar iniciativas de conservação ambiental, pesquisa científica e conscientização da sociedade sobre a preservação da biodiversidade.
+## Arquitetura
 
+```mermaid
+flowchart LR
+    App["App mobile<br/>React Native + Expo"] -->|"REST e WebSocket"| API["API<br/>Java 17 + Spring Boot"]
+    API -->|"JDBC"| DB[("MySQL 8.4")]
+    API -->|"HTTP"| IA["Serviço de identificação<br/>Python + FastAPI + BioCLIP 2"]
+    API -->|"Expo Push API"| Push["Notificações push"]
+    App -->|"Leaflet"| Mapa["OpenStreetMap"]
+```
 
-## 3. POSICIONAMENTO
+| Camada | Tecnologias |
+|---|---|
+| App | React Native 0.88, Expo SDK 58, TypeScript, React Navigation, Leaflet em WebView |
+| API | Java 17, Spring Boot 3.4, Spring Security, JPA/Hibernate, JWT, WebSocket, OpenAPI |
+| Dados | MySQL 8.4 |
+| Identificação de espécies | Python, FastAPI, BioCLIP 2 |
+| Infraestrutura | Docker Compose, GitHub Actions, EAS Build |
+| Testes | JUnit, Testcontainers, scripts de API em Python, JMeter, OWASP ZAP |
 
-### 3.1 Declaração do problema
-|||
-|-----|-----|
-|O problema de| A acelerada extinção de espécies da fauna brasileira e a escassez de dados georreferenciados atualizados sobre sua localização e status de conservação|
-|afeta| O equilíbrio dos ecossistemas locais, uma vez que a retirada de espécies-chave rompe cadeias tróficas (causando superpopulações ou colapsos biológicos) e elimina recursos naturais antes mesmo de serem compreendidos pela ciência. |
-|cujo impacto é|O desequilíbrio ambiental irreversível e a perda de potencial biotecnológico e médico — como o fechamento de janelas de pesquisa em zoofarmacognosia e a descoberta de curas para doenças que dependem da preservação da biodiversidade genética|
-|uma solução de sucesso deveria| Prover uma plataforma de ciência cidadã que gere visibilidade e dados em tempo real, permitindo que a sociedade e o poder público identifiquem, mapeiem e monitorem espécies em risco. A solução deve transformar a conscientização passiva em um movimento ativo de preservação através da tecnologia de reconhecimento e catalogação.|
+As decisões e os fluxos estão em [Arquitetura](docs/arquitetura.md).
 
----
+## Qualidade
 
-### 3.2 Declaração da visão do software
-|||
-| :--- | :--- |
-| **Para** | Pessoas no geral. |
-| **Que** | Carecem de informações sobre espécies locais e podem acabar por prejudicá-las por desconhecimento ou medo. |
-| **O** | Extinction. |
-| **É um** | Software-web de conscientização ambiental. |
-| **Que** | Preserva a biodiversidade ao transformar dados técnicos em publicações acessíveis e educativas, conectando os usuários à fauna e flora da sua região. |
-| **Diferente de** | Plataforma iNaturalist, que foca em pesquisas densas e observações. |
-| **Nosso produto** | Aposta num formato dinâmico de posts informativos e geolocalizados, facilitando a identificação e a proteção das espécies de forma prática e social. |
+Resultados da execução de 22/10/2026, em ambiente local com Docker Compose e o serviço de IA em CPU.
 
+| Verificação | Resultado |
+|---|---|
+| Testes do backend, incluindo integração com MySQL | 133 de 133 aprovados |
+| Baterias de API e regressão dos MVPs | 185 de 185 verificações aprovadas |
+| Identificação de espécie (30 fotos, meta de até 5 s) | Média de 874 ms, p95 de 972 ms |
+| Carga com 100 usuários simultâneos no JMeter | 7.836 requisições, 100% de sucesso, p95 de 28 ms |
+| Varredura OWASP ZAP da API | 0 alertas altos, 0 médios, 2 baixos e 3 informativos |
+| Modo offline | 100 registros recuperados, sem duplicatas |
 
+A metodologia, os defeitos encontrados e o que ainda falta validar estão em [Qualidade](docs/qualidade.md).
 
----
+## Estado do projeto
 
-## 4. DESCRIÇÃO DAS PARTES INTERESSADAS
+Entrega final do MVP 1.0 prevista para 07/11/2026.
 
-| Nome | Descrição | Responsabilidades |
-| :--- | :--- | :--- |
-| **Usuários Finais (cidadão comum)** | Entusiastas da natureza, trilheiros e fotógrafos amadores que utilizam o app em campo. | • Alimentar a base de dados com avistamentos reais e fotografias de qualidade.<br>• Interagir com a comunidade para fomentar o engajamento científico.<br>• Garantir a veracidade das informações postadas (autopoliciamento da comunidade). |
-| **Pesquisadores e Biólogos (Especialistas)** | Profissionais da área ambiental que utilizam os dados mapeados para estudos populacionais e de conservação. | • Validar a acurácia das identificações feitas pelo Machine Learning.<br>• Utilizar os dados consolidados para gerar relatórios de preservação.<br>• Garantir que os selos de extinção estejam alinhados com as normas científicas vigentes. |
-| **Equipe de Desenvolvimento** | Responsáveis pela construção técnica e gestão do produto. | • Garantir a qualidade técnica e a manutenibilidade do código.<br>• Monitorar o progresso das sprints e entregas acadêmicas.<br>• Implementar e otimizar os modelos de Machine Learning para reconhecimento de espécies.<br>• Assegurar a disponibilidade do sistema e a integridade dos dados coletados. |
-| **Órgãos Reguladores e ONGs (IBAMA, IUCN, ICMBio)** | Instituições que fornecem as bases de dados de espécies em risco e se beneficiam do mapeamento. | • Fornecer (via APIs ou documentos) as listas atualizadas de fauna e flora em extinção.<br>• Garantir que o sistema atue em conformidade com as leis de proteção à biodiversidade.<br>• Atuar como possíveis parceiros para a sustentabilidade de longo prazo do projeto. |
+Ainda dependem de pessoas, aparelhos ou contas externas:
 
+- teste de usabilidade com 10 participantes;
+- paridade entre Android e iOS, que exige um build para iPhone;
+- medição de consumo de bateria em aparelho real;
+- credenciais de produção para login social e push remoto.
 
-**5 REQUISITOS**
+## Equipe
 
-**5.1 REQUISITOS FUNCIONAIS**
+**Grupo 11**
 
-| ID | Nome | Descrição | Prioridade |
-| :--- | :--- | :--- | :--- |
-| **RF001** | Reconhecimento de Espécie via Machine Learning | O sistema deve permitir que o usuário tire uma foto ou suba uma imagem para que o Extinction identifique a espécie de fauna ou flora automaticamente. | Essencial |
-| **RF002** | Mapeamento de Avistamento (GPS) | O sistema deve capturar automaticamente as coordenadas geográficas (latitude e longitude) no momento em que um usuário registrar um novo avistamento. | Essencial |
-| **RF003** | Validação de Status de Extinção | Após a identificação, o sistema deve consultar uma base de dados (API) para atribuir o selo de conservação correto (Ex: "Em Perigo", "Vulnerável", "Extinta na Natureza"). | Essencial |
-| **RF004** | Sincronização de Dados Offline | O sistema deve permitir que o usuário registre avistamentos sem conexão com a internet e realize o upload automático assim que detectar um sinal ativo. | Essencial |
-| **RF005** | Feed de Interação Comunitária | O sistema deve exibir uma linha do tempo com as descobertas de outros usuários, permitindo interações como curtidas e comentários. | Importante |
-| **RF006** | Enciclopédia Pessoal (Catálogo) | O sistema deve manter um histórico organizado (álbum) de todas as espécies que o usuário já catalogou, funcionando como um "log de conquistas". | Importante |
-| **RF007** | Ranking de Usuários (Gamificação) | O sistema deve listar os usuários com maior número de avistamentos validados para incentivar a participação na coleta de dados. | Desejável |
-| **RF008** | Filtro de Mapa Interativo | O sistema deve permitir que o usuário filtre o mapa por tipo de espécie, data ou nível de risco de extinção. | Importante |
-| **RF009** | Manter Cadastro de Usuário | O sistema deve permitir criar, ler, atualizar e desativar contas de usuário. | Essencial |
-| **RF010** | Gerenciar Dados do Perfil | O sistema deve permitir que o usuário edite suas informações públicas (nome, foto de perfil, bio) e visualize suas estatísticas (total de espécies catalogadas). | Essencial |
-| **RF011** | Criar Postagem de Avistamento | O sistema deve permitir que o usuário publique uma foto acompanhada da espécie identificada e da localidade capturada. | Essencial |
-| **RF012** | Excluir/Editar Postagem | O usuário autor da postagem deve poder remover ou corrigir informações de sua publicação. | Essencial |
-| **RF013** | Listar Feed de Postagens | O sistema deve recuperar e exibir as postagens de forma cronológica ou por relevância para os usuários. | Importante |
-| **RF014** | Consultar Informações da Espécie | O sistema deve permitir a busca e leitura de dados detalhados de uma espécie (nome científico, habitat) a partir do banco de dados. | Essencial |
-| **RF015** | Atribuir Selo de Especialista | O sistema deve vincular ao perfil do usuário, um selo de especialista para aqueles que comprovem conhecimento na área (biólogos, veterinários). | Importante |
-| **RF016** | Registrar Coordenadas de Avistamento | O sistema deve persistir a Latitude e Longitude de cada nova postagem para alimentar o mapa interativo. | Essencial |
-| **RF017** | Filtrar Avistamentos por Localidade | O sistema deve permitir a leitura de pontos geográficos dentro de um raio específico ou região selecionada no mapa. | Importante |
-| **RF018** | Executar Inferência de Imagem | O sistema deve enviar a imagem capturada para a classe Tensorflow e receber como retorno a predição da espécie com sua respectiva porcentagem de confiança. | Essencial |
-| **RF019** | Vincular Espécie à Postagem | O sistema deve permitir que uma ou mais espécies identificadas pelo TensorFlow sejam associadas a uma postagem específica no momento da publicação ou edição. | Essencial |
-| **RF020** | Desvincular Espécie de Postagem | O sistema deve permitir a remoção do vínculo entre uma espécie e uma postagem, caso a identificação seja invalidada por um especialista. | Essencial |
-| **RF021** | Consultar Espécies por Postagem | O sistema deve recuperar todas as espécies associadas a uma idPostagem específica para exibição no feed ou detalhes do avistamento. | Essencial |
-| **RF022** | Listar Postagens por Espécie | O sistema deve ser capaz de filtrar e exibir todas as postagens que contenham uma idEspecie específica, permitindo visualizar a distribuição geográfica daquela espécie no mapa. | Importante |
+- Daniel Souza de Lima, Gerente de Projeto
+- [Flávio Daniel Rocha Santos](https://github.com/Fdanielsantos)
+- Guilherme Alves Rocha
+- Cayky Emílio Vieira Neves
 
-**5.2 REQUISITOS NÃO FUNCIONAIS**
-| ID | Nome | Descrição | Prioridade |
-| :--- | :--- | :--- | :--- |
-| **RNF001** | Segurança | O sistema deve ser projetado para ser seguro, com recursos para proteger a privacidade e confidencialidade dos usuários, como criptografia de senha, autenticação em dois fatores e medidas de segurança para evitar ataques de hackers. | Essencial |
-| **RNF002** | Escalabilidade | O sistema deve ser projetado para lidar com um grande número de usuários. Ele deve ser capaz de escalar facilmente conforme a demanda aumentar e garantir que o desempenho não seja afetado negativamente. | Essencial |
-| **RNF003** | Usabilidade | O sistema deve ser fácil de usar e navegar para garantir a melhor experiência do usuário. Deve ter uma interface intuitiva e amigável, além de instruções claras para os usuários. | Essencial |
-| **RNF004** | Tempo de Resposta (Performance) | O processamento da imagem pelo modelo de Machine Learning para identificação da espécie não deve ultrapassar 20 segundos. | Importante |
-| **RNF005** | Disponibilidade Offline (Confiabilidade) | O banco de dados local deve ser capaz de armazenar pelo menos 100 registros completos (imagem + metadados) enquanto o dispositivo estiver sem conexão. | Essencial |
-| **RNF006** | Eficiência Energética | O aplicativo deve ser otimizado para que o uso contínuo do GPS e câmera não consuma mais de 30% de bateria por hora de uso ativo. | Importante |
-| **RNF007** | Integridade de Dados Geográficos | O sistema deve implementar filtros de validação para impedir que avistamentos de espécies terrestres sejam registrados em coordenadas localizadas em oceanos ou desertos incompatíveis. | Importante |
-| **RNF008** | Modularidade da API de Espécies | A arquitetura do sistema deve permitir a substituição ou atualização da base de dados científica (IUCN/IBAMA) sem a necessidade de alteração no núcleo do código-fonte. | Essencial |
-| **RNF009** | Portabilidade | O sistema deve ser desenvolvido de forma a garantir uma experiência fluida tanto em sistemas Android quanto iOS. | Importante |
+### Meu papel
+
+Atuei como Gerente de Projeto, cuidando do planejamento das entregas e da documentação. No desenvolvimento, contribuí principalmente com a API, as telas do app, as baterias de teste e os modelos de processo de negócio.
+
+## Documentação
+
+- [Produto e requisitos](docs/produto.md)
+- [Arquitetura](docs/arquitetura.md)
+- [Telas do app](docs/telas.md)
+- [Design](docs/design.md)
+- [Processos de negócio](docs/processos.md)
+- [Qualidade](docs/qualidade.md)
+- [Documento de Visão (PDF)](docs/documentos/Documento-de-Visao.pdf)
+- [Documento de Requisitos (PDF)](docs/documentos/Documento-de-Requisitos.pdf)
+
+## Código-fonte
+
+O código é mantido em um repositório privado. Para uma avaliação técnica, fale comigo pelo [LinkedIn](https://www.linkedin.com/in/daniel-souzade-lima).
