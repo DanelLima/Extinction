@@ -129,4 +129,4 @@ Atuei como Gerente de Projeto, cuidando do planejamento das entregas e da docume
 
 ## Código-fonte
 
-O código é mantido em um repositório privado. Para uma avaliação técnica, fale comigo pelo [LinkedIn](https://www.linkedin.com/in/daniel-souzade-lima).
+O código é mantido em um repositório privado. Para uma avaliação técnica, fale comigo pelo [LinkedIn](https://www.linkedin.com/in/daniel-souza-de-lima/).
